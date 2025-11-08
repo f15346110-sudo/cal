@@ -55,6 +55,10 @@
         transition: transform 0.3s ease;
      }
 
+     div .audio-btn {
+        color:#fff;
+     }
+
      .calculator:hover {
         transform: translateY(-5px);
      }
@@ -395,6 +399,7 @@
         }
      }
   </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <audio id="musik" autoplay loop>
@@ -450,12 +455,13 @@
   <div class="history" id="historyBox">
     <h3>Riwayat Perhitungan</h3>
     <div id="historyList"></div>
-    <button class="clear-history" onclick="clearHistory()">Hapus Riwayat</button>
+    <button class="clear-history" onclick="clearHistory()">Hapus Riwayat <i class="fa-solid fa-house"></i>
+</button>
   </div>
 
   <div class="audio-controls">
-    <div class="audio-btn" onclick="toggleMusic()" id="musicToggle">🔊</div>
-    <div class="audio-btn" onclick="toggleSound()" id="soundToggle">🔊</div>
+    <div class="audio-btn" onclick="toggleMusic()" id="musicToggle"><i class="fa fa-home"></i></div>
+    <div class="audio-btn" onclick="toggleSound()" id="soundToggle"><i class="fa fa-volume-low"></i></div>
   </div>
 
   <script>
